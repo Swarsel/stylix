@@ -1,4 +1,4 @@
-{ colors }:
+{ colors, opacityHex }:
 with colors;
 ''
   :root {
@@ -18,28 +18,38 @@ with colors;
     --arrowpanel-background: #${base00-hex} !important;
     --sidebar-text-color: #${base05-hex} !important;
     --lwt-sidebar-text-color: #${base05-hex} !important;
-    --lwt-sidebar-background-color: #${base00-hex} !important;
-    --toolbar-bgcolor: #${base02-hex} !important;
-    --newtab-background-color: #${base00-hex} !important;
-    --zen-themed-toolbar-bg: #${base00-hex} !important;
-    --zen-main-browser-background: #${base00-hex} !important;
-    --toolbox-bgcolor-inactive: #${base01-hex} !important;
+    --lwt-sidebar-background-color: #${base00-hex}${opacityHex} !important;
+    --toolbar-bgcolor: #${base02-hex}${opacityHex} !important;
+    --newtab-background-color: #${base00-hex}${opacityHex} !important;
+    --zen-themed-toolbar-bg: #${base00-hex}${opacityHex} !important;
+    --zen-main-browser-background: #${base00-hex}${opacityHex} !important;
+    --toolbox-bgcolor-inactive: #${base01-hex}${opacityHex} !important;
+    --zen-themed-toolbar-bg-transparent: #${base01-hex}${opacityHex} !important;
+  }
+
+  zen-workspace {
+    --toolbox-textcolor: #${base05-hex} !important;
   }
 
   #permissions-granted-icon {
     color: #${base05-hex} !important;
   }
 
+  #historySwipeAnimationPreviousArrow,#historySwipeAnimationNextArrow {
+    --swipe-nav-icon-primary-color: #${base0D-hex} !important;
+    --swipe-nav-icon-accent-color: #${base00-hex} !important;
+  }
+
+  #sidebar-box {
+    background-color: #${base00-hex}${opacityHex} !important;
+  }
+
   .sidebar-placesTree {
-    background-color: #${base00-hex} !important;
+    background-color: #${base00-hex}${opacityHex} !important;
   }
 
   #zen-workspaces-button {
-    background-color: #${base00-hex} !important;
-  }
-
-  #TabsToolbar {
-    background-color: #${base00-hex} !important;
+    background-color: #${base00-hex}${opacityHex} !important;
   }
 
   .urlbar-background {
@@ -47,7 +57,7 @@ with colors;
   }
 
   .content-shortcuts {
-    background-color: #${base00-hex} !important;
+    background-color: #${base00-hex}${opacityHex} !important;
     border-color: #${base0D-hex} !important;
   }
 
@@ -67,7 +77,7 @@ with colors;
   #zen-media-controls-toolbar {
     & #zen-media-progress-bar {
       &::-moz-range-track {
-        background: #${base02-hex} !important;
+        background: #${base02-hex}${opacityHex} !important;
       }
     }
   }
@@ -125,15 +135,19 @@ with colors;
     --identity-icon-color: #${base0F-hex} !important;
   }
 
-  #navigator-toolbox {
+  #zen-toolbar-background {
     --zen-main-browser-background-toolbar: #${base00-hex} !important;
   }
 
-  #zen-appcontent-navbar-container {
-    background-color: #${base00-hex} !important;
+  #commonDialog {
+    background-color: #${base00-hex}${opacityHex} !important;
   }
 
-  #contentAreaContextMenu menu,
+  #zen-browser-background {
+    --zen-main-browser-background: #${base00-hex}${opacityHex} !important;
+  }
+
+  menu,
   menuitem,
   menupopup {
     color: #${base05-hex} !important;

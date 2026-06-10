@@ -7,12 +7,6 @@
 #
 #       nix run .#all-maintainers
 {
-  "0x5a4" = {
-    email = "bej86nug@hhu.de";
-    github = "0x5a4";
-    githubId = 54070204;
-    name = "0x5a4";
-  };
   "0xda157" = {
     email = "da157@voidq.com";
     github = "0xda157";
@@ -35,6 +29,12 @@
     github = "Flameopathic";
     githubId = 64027365;
     name = "Erin Pletches";
+  };
+  Lyndeno = {
+    email = "lsanche@lyndeno.ca";
+    github = "Lyndeno";
+    githubId = 13490857;
+    name = "Lyndon Sanche";
   };
   MrSom3body = {
     email = "nix@sndh.dev";
@@ -118,6 +118,12 @@
     githubId = 173855353;
     name = "dastarruer";
   };
+  einetuer = {
+    email = "bej86nug@hhu.de";
+    github = "einetuer";
+    githubId = 54070204;
+    name = "0x5a4";
+  };
   gideonwolfe = {
     email = "wolfegideon@gmail.com";
     github = "gideonwolfe";
@@ -189,9 +195,6 @@
     email = "nukdokplex@nukdokplex.ru";
     github = "nukdokplex";
     githubId = 25458915;
-    keys = [
-      { fingerprint = "7CE2 4C42 942D 58EA 99F6  F00A A47E 7374 3EF6 FCC4"; }
-    ];
     name = "Viktor Titov";
   };
   omega-800 = {
@@ -234,19 +237,14 @@
     githubId = 19377854;
     name = "jamie";
   };
-  skoove = {
-    email = "zie@sturges.com.au";
-    github = "skoove";
-    githubId = 53106860;
-    name = "Zie Sturges";
-  };
   trueNAHO = {
+    email = "nix@noahbiewesch.com";
     github = "trueNAHO";
     githubId = 90870942;
     keys = [
       { fingerprint = "5FC6 088A FB1A 609D 4532  F919 0C1C 177B 3B64 68E0"; }
     ];
-    name = "Noah Pierre Biewesch";
+    name = "Noah Biewesch";
   };
   vidhanio = {
     email = "me@vidhan.io";

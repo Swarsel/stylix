@@ -132,7 +132,10 @@
     # keep-sorted start block=yes newline_separated=yes
     dankMaterialShell = {
       url = "github:AvengeMedia/DankMaterialShell";
-      inputs.nixpkgs.follows = "dev-nixpkgs";
+      inputs = {
+        nixpkgs.follows = "dev-nixpkgs";
+        flake-compat.follows = "flake-compat";
+      };
     };
 
     flake-compat.url = "github:NixOS/flake-compat";
@@ -162,7 +165,13 @@
 
     noctalia-shell = {
       url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "dev-nixpkgs";
+      inputs = {
+        nixpkgs.follows = "dev-nixpkgs";
+        noctalia-qs.inputs = {
+          systems.follows = "dev-systems";
+          treefmt-nix.follows = "treefmt-nix";
+        };
+      };
     };
 
     nvf = {
